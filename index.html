@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basilic Travel</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      color: #333;
+    }
+    header {
+      background-color: #00cc44; /* ярко-зеленый */
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 { margin: 0; font-size: 2em; }
+    header p { margin: 5px 0 0 0; }
+    nav {
+      background-color: #00b33c;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section { padding: 40px 20px; max-width: 1200px; margin: 0 auto; }
+    .tours { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .tour-card {
+      border: 2px solid #00cc44;
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.2s;
+      background: #f9fff9;
+    }
+    .tour-card:hover { transform: scale(1.03); }
+    .tour-card img { width: 100%; height: 180px; object-fit: cover; }
+    .tour-card h3 { margin: 10px 0; color: #00cc44; font-size: 1.1em; }
+    .tour-card p { margin: 5px 10px; font-size: 0.95em; }
+    .tour-card a {
+      display: inline-block;
+      margin: 10px 0 15px 0;
+      padding: 10px 20px;
+      background-color: #00cc44;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .contact-buttons a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      background-color: #00cc44;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer { text-align: center; padding: 20px; background-color: #00cc44; color: white; }
+    @media (max-width: 600px) { nav { flex-direction: column; } }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Basilic Travel</h1>
+    <p>Путешествия, которые вдохновляют</p>
+  </header>
+
+  <nav>
+    <a href="#tours">Туры</a>
+    <a href="#about">О нас</a>
+    <a href="#contacts">Контакты</a>
+  </nav>
+
+  <section id="tours">
+    <h2>Наши туры</h2>
+    <div class="tours">
+      <!-- Дубай — Citymax Ras Al Khaimah -->
+      <div class="tour-card">
+        <img src="https://source.unsplash.com/400x250/?dubai" alt="Дубай Citymax">
+        <h3>Дубай — Citymax Ras Al Khaimah 3*</h3>
+        <p>8 ночей — $630 | Вылет: 15 января</p>
+        <a href="https://t.me/bazilliktravel_uz" target="_blank">Выбрать тур</a>
+      </div>
+
+      <div class="tour-card">
+        <img src="https://source.unsplash.com/400x250/?dubai" alt="Дубай Orchid Hotel">
+        <h3>Дубай — Orchid Hotel Al Barsha 4*</h3>
+        <p>8 ночей — $707 | Вылет: 15 января</p>
+        <a href="https://t.me/bazilliktravel_uz" target="_blank">Выбрать тур</a>
+      </div>
+
+      <!-- Шри-Ланка — Mendis Cottage -->
+      <div class="tour-card">
+        <img src="https://source.unsplash.com/400x250/?srilanka,beach" alt="Шри-Ланка Mendis Cottage">
+        <h3>Шри-Ланка — Mendis Cottage 3*</h3>
+        <p>7–14 января — от 7,4 млн сум</p>
+        <a href="https://t.me/bazilliktravel_uz" target="_blank">Выбрать тур</a>
+      </div>
+
+      <div class="tour-card">
+        <img src="https://source.unsplash.com/400x250/?srilanka,resort" alt="Шри-Ланка Anantara">
+        <h3>Шри-Ланка — Anantara Kalutara 5*</h3>
+        <p>7–14 января — от 20,6 млн сум</p>
+        <a href="https://t.me/bazilliktravel_uz" target="_blank">Выбрать тур</a>
+      </div>
+
+      <!-- Абу-Даби + Дубай -->
+      <div class="tour-card">
+        <img src="https://source.unsplash.com/400x250/?abudhabi,dubai" alt="Абу-Даби и Дубай">
+        <h3>Абу-Даби + Дубай — Millennium Downtown 4*</h3>
+        <p>4 ночи Абу-Даби + 3 ночи Дубай — $638 | Вылет: 16 января</p>
+        <a href="https://t.me/bazilliktravel_uz" target="_blank">Выбрать тур</a>
+      </div>
+
+      <div class="tour-card">
+        <img src="https://source.unsplash.com/400x250/?abudhabi,dubai" alt="Абу-Даби и Дубай">
+        <h3>Абу-Даби + Дубай — Bab Al Qasr 5* + Media Rotana 5*</h3>
+        <p>7 ночей — $952 | Вылет: 16 января</p>
+        <a href="https://t.me/bazilliktravel_uz" target="_blank">Выбрать тур</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>О нас</h2>
+    <p>Basilic Travel — туристическое агентство, которое помогает подобрать идеальные путешествия для каждого. Работаем более 1 года и уже помогли многим клиентам насладиться отдыхом без забот.</p>
+  </section>
+
+  <section id="contacts">
+    <h2>Контакты</h2>
+    <p>Свяжитесь с нами через:</p>
+    <div class="contact-buttons">
+      <a href="https://t.me/bazilliktravel_uz" target="_blank">Telegram</a>
+      <a href="https://www.instagram.com/basilic_travel/" target="_blank">Instagram</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Basilic Travel
+  </footer>
+
+</body>
+</html>
